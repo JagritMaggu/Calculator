@@ -2,7 +2,12 @@
 let buttons= document.querySelectorAll('button');
 let input= document.getElementById('inputB');
 let str="";
+let multiPly = document.querySelector('.multiply');
+
+
 let arr= Array.from(buttons);
+
+
 arr.forEach(button=>{
     button.addEventListener('click', (e)=>{
         if(e.target.innerHTML=='='){
@@ -19,7 +24,9 @@ arr.forEach(button=>{
          
             input.value=str;
         }
-        else
+       
+        
+       else
         {
         str= str + e.target.innerHTML;
         input.value=str;
